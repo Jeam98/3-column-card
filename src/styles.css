@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+:root {
+  --Brightorange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+  --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+  --Verylightgray: hsl(0, 0%, 95%);
+}
+* {
+  font-family: "Lexend Deca", sans-serif;
+}
+section {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.cards {
+  display: grid;
+  margin: 1.5em;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cars {
+  display: grid;
+  gap: 1em;
+  padding: 1em 2em;
+}
+#sedan {
+  background-color: var(--Brightorange);
+}
+#suv {
+  background-color: var(--Darkcyan);
+}
+#luxury {
+  background-color: var(--Verydarkcyan);
+}
+p {
+  color: var(--Transparentwhite);
+  font-size: 15px;
+  width: 250px;
+}
+h1 {
+  color: var(--Verylightgray);
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 27px;
+}
+button {
+  padding: 1em;
+  border-radius: 30px;
+  border: none;
+  width: 45%;
+  background-color: var(--Verylightgray);
+  cursor: pointer;
+}
+#btn-1 {
+  color: var(--Brightorange);
+  border: 2px solid transparent;
+  transition: 0.5s color, 0.5s background-color, 0.5s border;
+}
+#btn-1:hover {
+  color: white;
+  background-color: var(--Brightorange);
+  border: 2px solid white;
+}
+#btn-2 {
+  color: var(--Darkcyan);
+  border: 2px solid transparent;
+  transition: 0.5s color, 0.5s background-color, 0.5s border;
+}
+#btn-2:hover {
+  color: white;
+  background-color: var(--Darkcyan);
+  border: 2px solid white;
+}
+#btn-3 {
+  color: var(--Verydarkcyan);
+  border: 2px solid transparent;
+  transition: 0.5s color, 0.5s background-color, 0.5s border;
+}
+#btn-3:hover {
+  color: white;
+  background-color: var(--Verydarkcyan);
+  border: 2px solid white;
+}
+@media (min-width: 900px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .cars {
+    gap: 2em;
+    padding: 3em 2em;
+  }
+}
